@@ -1,18 +1,116 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Zheng Shi</title>
-  </head>
-  <body style="font-family: system-ui; max-width: 700px; margin: 40px auto; padding: 0 16px;">
-    <h1>Zheng Shi</h1>
-    <p>Data-driven understanding and prediction of ecosystem dynamics through experiments, process-based modeling, and AI.</p>
-    <h2>Links</h2>
-    <ul>
-      <li><a href="https://github.com/zshigrit">GitHub</a></li>
-      <li><a href="https://scholar.google.com/citations?user=vwdpYyAAAAAJ&hl=en&oi=sra">Google Scholar</a></li>
-      <li><a href="zheng.shi@ou.edu">Email</a></li>
-    </ul>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab Name — University</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/lab-logo.svg" alt="Lab logo">
+        <div>
+          <div class="title">Lab Name</div>
+          <div class="sub">Department • University • City, State</div>
+        </div>
+      </div>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="join.html">Join</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card">
+          <h1>We study <span style="color:var(--brand)">[your lab’s main theme]</span>.</h1>
+          <p>
+            One-sentence mission. Example: We combine field experiments, mechanistic modeling, and ML
+            to understand ecosystem carbon cycling under global change.
+          </p>
+          <div class="badges">
+            <div class="badge">Ecosystem modeling</div>
+            <div class="badge">Microbial ecology</div>
+            <div class="badge">AI/ML</div>
+            <div class="badge">Open science</div>
+          </div>
+
+          <div class="buttonrow">
+            <a class="button" href="research.html">Explore research</a>
+            <a class="button secondary" href="join.html">Join the lab</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 style="margin-top:0">News & Updates</h2>
+          <div class="list">
+            <div class="item">
+              <div><b>New paper:</b> Title of paper (Year)</div>
+              <div class="meta">Add a one-line highlight + link on Publications page.</div>
+            </div>
+            <div class="item">
+              <div><b>Open position:</b> PhD / Postdoc / RA</div>
+              <div class="meta">Describe briefly, link to Join page.</div>
+            </div>
+            <div class="item">
+              <div><b>Talk:</b> Conference / Seminar</div>
+              <div class="meta">Date • Location</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid2">
+        <div class="card">
+          <h2 style="margin-top:0">What we do</h2>
+          <div class="kv">
+            <div class="k">Approach</div>
+            <div class="v">Field + lab measurements, modeling, data synthesis, ML.</div>
+            <div class="k">Outputs</div>
+            <div class="v">Peer-reviewed papers, open datasets, software, tutorials.</div>
+            <div class="k">Values</div>
+            <div class="v">Reproducibility, collaboration, mentoring, inclusive science.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 style="margin-top:0">Featured work</h2>
+          <div class="list">
+            <div class="item">
+              <div><b>Project A:</b> short description of a flagship project.</div>
+              <div class="meta">Methods • Key result • Impact</div>
+            </div>
+            <div class="item">
+              <div><b>Software:</b> link to a GitHub repo / package.</div>
+              <div class="meta">What it does + who uses it.</div>
+            </div>
+            <div class="item">
+              <div><b>Dataset:</b> link to Zenodo/DOE/other archive.</div>
+              <div class="meta">What it contains + citation.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Lab Name • Built with GitHub Pages • <span class="small">Last updated: edit this footer anytime.</span>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
 </html>
