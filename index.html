@@ -5,6 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EcoDynamics Lab — Ecosystem Modeling</title>
   <link rel="stylesheet" href="assets/style.css" />
+
+  <!-- Page-only layout helpers (safe even if style.css exists) -->
+  <style>
+    .home-grid{
+      display:grid;
+      grid-template-columns: 2.2fr 1fr;
+      gap:24px;
+      align-items:start;
+      margin-top: 18px;
+    }
+    @media (max-width: 980px){
+      .home-grid{ grid-template-columns: 1fr; }
+    }
+    .sidebar-card{
+      background:#eef2f5;
+      border:1px solid #e4e8ee;
+    }
+    .sidebar-card h2{
+      margin-top:0;
+      text-align:center;
+      text-decoration: underline;
+    }
+    .contact-photo{
+      width: 72%;
+      max-width: 260px;
+      display:block;
+      margin: 14px auto 18px auto;
+      border-radius: 4px;
+    }
+    .contact-name{
+      font-size: 22px;
+      font-weight: 700;
+      margin: 6px 0 14px 0;
+    }
+    .contact-row{
+      margin: 10px 0;
+      line-height: 1.4;
+    }
+    .contact-label{
+      font-weight: 700;
+    }
+    .contact-link{
+      display:inline-block;
+      margin-top: 12px;
+    }
+  </style>
 </head>
 
 <body>
@@ -33,68 +79,111 @@
 
 <main class="container">
 
-<section class="hero">
-  <div class="card">
+  <section class="home-grid">
 
-    <!-- INTRODUCE YOU FIRST -->
-    <h1>Zheng Shi, Ph.D.</h1>
+    <!-- LEFT: MAIN CONTENT -->
+    <div class="card">
 
-    <p>
-      Research Scientist<br>
-      Institute for Environmental Genomics, University of Oklahoma
-    </p>
+      <!-- INTRODUCE YOU FIRST -->
+      <h1>Zheng Shi, Ph.D.</h1>
 
-    <p>
-      I develop quantitative frameworks that integrate ecosystem ecology, biological statistics,
-      and process-based modeling to understand how plant and soil systems respond to environmental change.
-      My research combines long-term field experiments, global data synthesis, mechanistic modeling,
-      and machine learning to improve prediction and uncertainty quantification of terrestrial carbon cycling.
-    </p>
+      <p>
+        Research Scientist<br>
+        Institute for Environmental Genomics, University of Oklahoma
+      </p>
 
-    <p>
-      I received my Ph.D. in Global Change Ecology from the University of Oklahoma and previously held
-      postdoctoral appointments at Oak Ridge National Laboratory and the University of California, Irvine.
-      I am currently a Research Scientist at the Institute for Environmental Genomics at the University of Oklahoma.
-    </p>
+      <p>
+        I develop quantitative frameworks that integrate ecosystem ecology, biological statistics,
+        and process-based modeling to understand how plant and soil systems respond to environmental change.
+        My research combines long-term field experiments, global data synthesis, mechanistic modeling,
+        and machine learning to improve prediction and uncertainty quantification of terrestrial carbon cycling.
+      </p>
 
-    <hr style="margin:28px 0; border:0; border-top:1px solid #e6e6e6;">
+      <p>
+        I received my Ph.D. in Global Change Ecology from the University of Oklahoma and previously held
+        postdoctoral appointments at Oak Ridge National Laboratory and the University of California, Irvine.
+        I am currently a Research Scientist at the Institute for Environmental Genomics at the University of Oklahoma.
+      </p>
 
-    <!-- LAB / RESEARCH OVERVIEW -->
-    <h2 style="margin-top:0;">Data-driven understanding and prediction of ecosystem dynamics</h2>
+      <hr style="margin:28px 0; border:0; border-top:1px solid #e6e6e6;">
 
-    <p>
-      The EcoDynamics Lab studies terrestrial ecosystem biogeochemical cycling using field experiments,
-      data synthesis, mechanistic modeling, and machine learning. Our research focuses on plant and soil carbon
-      dynamics, microbial processes, and improving Earth system model predictions under climate change.
-    </p>
+      <!-- LAB / RESEARCH OVERVIEW -->
+      <h2 style="margin-top:0;">Data-driven understanding and prediction of ecosystem dynamics</h2>
 
-    <p>
-      A major goal of the lab is to reduce uncertainty in land carbon cycle projections by integrating experimental
-      benchmarks (e.g., warming and precipitation manipulations), global datasets including radiocarbon constraints,
-      and model evaluation frameworks. We develop tools for benchmarking and diagnosis of land models and explore hybrid
-      approaches that combine process-based models with modern machine learning methods.
-    </p>
+      <p>
+        The EcoDynamics Lab studies terrestrial ecosystem biogeochemical cycling using field experiments,
+        data synthesis, mechanistic modeling, and machine learning. Our research focuses on plant and soil carbon
+        dynamics, microbial processes, and improving Earth system model predictions under climate change.
+      </p>
 
-    <h2 style="margin-top:28px;">Current research directions</h2>
+      <p>
+        A major goal of the lab is to reduce uncertainty in land carbon cycle projections by integrating experimental
+        benchmarks (e.g., warming and precipitation manipulations), global datasets including radiocarbon constraints,
+        and model evaluation frameworks. We develop tools for benchmarking and diagnosis of land models and explore hybrid
+        approaches that combine process-based models with modern machine learning methods.
+      </p>
 
-    <ul>
-      <li>Field experiment: long-term temporal responses of plant and microbial communities and carbon cycle to environmental change</li>
-      <li>Data synthesis: spatial responses of plant and soil carbon dynamics to environmental change</li>
-      <li>Mechanistic modeling: mechanisms and uncertainties in ecosystem and soil carbon response to climate change</li>
-      <li>Machine learning: combining process-based models with machine learning for mechanisms identification and extrapolation</li>
-    </ul>
+      <h2 style="margin-top:28px;">Current research directions</h2>
 
-    <!-- CLEAN LINKS -->
-    <div style="margin-top:28px;">
-      For code and reproducible workflows, visit our
-      <a href="https://github.com/zshigrit" target="_blank" rel="noopener noreferrer">GitHub</a>.
-      A complete list of publications is available on
-      <a href="https://scholar.google.com/citations?user=vwdpYyAAAAAJ&hl=en&oi=sra" target="_blank" rel="noopener noreferrer">Google Scholar</a>.
-      Download <a href="assets/files/CV.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a>.
+      <ul>
+        <li>Field experiment: long-term temporal responses of plant and microbial communities and carbon cycle to environmental change</li>
+        <li>Data synthesis: spatial responses of plant and soil carbon dynamics to environmental change</li>
+        <li>Mechanistic modeling: mechanisms and uncertainties in ecosystem and soil carbon response to climate change</li>
+        <li>Machine learning: combining process-based models with machine learning for mechanisms identification and extrapolation</li>
+      </ul>
+
+      <!-- CLEAN LINKS -->
+      <div style="margin-top:28px;">
+        For code and reproducible workflows, visit our
+        <a href="https://github.com/zshigrit" target="_blank" rel="noopener noreferrer">GitHub</a>.
+        A complete list of publications is available on
+        <a href="https://scholar.google.com/citations?user=vwdpYyAAAAAJ&hl=en&oi=sra" target="_blank" rel="noopener noreferrer">Google Scholar</a>.
+        Download <a href="assets/files/CV.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a>.
+      </div>
+
     </div>
 
-  </div>
-</section>
+
+    <!-- RIGHT: CONTACT INFORMATION PANEL -->
+    <aside class="card sidebar-card">
+
+      <h2>Contact Information</h2>
+
+      <!-- Put your headshot here -->
+      <img class="contact-photo" src="assets/img/zheng-shi.jpg" alt="Zheng Shi headshot">
+
+      <div class="contact-name">Dr. Zheng Shi</div>
+
+      <div class="contact-row">
+        <span class="contact-label">Email:</span>
+        <a href="mailto:zheng.shi@ou.edu">zheng.shi@ou.edu</a>
+      </div>
+
+      <!-- Optional: add/adjust these -->
+      <div class="contact-row">
+        <span class="contact-label">Office Phone:</span>
+        <span>(XXX) XXX-XXXX</span>
+      </div>
+
+      <div class="contact-row">
+        <span class="contact-label">Office:</span>
+        <span>Institute for Environmental Genomics (IEG), University of Oklahoma</span>
+      </div>
+
+      <div class="contact-row">
+        <span class="contact-label">Address:</span><br>
+        <span>
+          University of Oklahoma<br>
+          Norman, OK, USA
+        </span>
+      </div>
+
+      <!-- Optional ORCID (add your real ORCID link if you want) -->
+      <a class="contact-link" href="#" target="_blank" rel="noopener noreferrer">ORCID iD</a>
+
+    </aside>
+
+  </section>
 
 </main>
 
