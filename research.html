@@ -1,330 +1,276 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Research — EcoDynamics Lab</title>
-  <link rel="stylesheet" href="assets/style.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Page-only layout helpers (keeps your global style.css untouched) -->
-  <style>
-    /* Two-column theme layout inside a card */
-    .theme-row{
-      display:flex;
-      gap:28px;
-      align-items:stretch; /* makes left + right columns match height */
-    }
+<title>Research — EcoDynamics Lab</title>
+<link rel="stylesheet" href="assets/style.css" />
 
-    .theme-media{
-      flex:0 0 42%;
-      display:flex;        /* allow inner gallery to stretch */
-      min-width: 280px;
-    }
+<style>
 
-    .theme-body{
-      flex:1 1 auto;
-      min-width:0;
-    }
+/* ---------- THEME LAYOUT ---------- */
 
-    /* 2x2 gallery that fills the entire left column height */
-    .field-gallery{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap:12px;
-      width:100%;
-      height:100%;
-    }
+.theme-row{
+  display:flex;
+  gap:32px;
+  align-items:stretch;
+}
 
-    .field-gallery img{
-      width:100%;
-      height:100%;
-      object-fit:cover;   /* keeps a uniform panel look */
-      border-radius:6px;
-      display:block;
-    }
+.theme-media{
+  flex:0 0 38%;
+}
 
-    .theme-caption{
-      font-size:14px;
-      color:#666;
-      margin-top:12px;
-      line-height:1.35;
-    }
+.theme-body{
+  flex:1;
+}
 
-    /* Mobile/tablet stacking */
-    @media (max-width: 900px){
-      .theme-row{
-        flex-direction:column;
-      }
-      .theme-media{
-        flex:0 0 auto;
-        min-width:0;
-      }
-      .field-gallery{
-        height:auto;
-      }
-      .field-gallery img{
-        height:auto;
-        object-fit:contain;
-        background:#f3f3f3; /* optional: avoids weird cropping when stacked */
-      }
-    }
-  </style>
+/* ---------- STACKED FIGURES ---------- */
+
+.field-gallery{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.field-gallery img{
+  width:100%;
+  border-radius:6px;
+  object-fit:cover;
+}
+
+/* ---------- REFERENCE LINKS ---------- */
+
+.ref{
+  text-decoration:none;
+  color:#1a5fb4;
+  font-weight:500;
+}
+
+.ref:hover{
+  text-decoration:underline;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width:900px){
+
+  .theme-row{
+    flex-direction:column;
+  }
+
+}
+
+</style>
 </head>
+
 
 <body>
 
 <header class="topbar">
-  <div class="container nav">
+<div class="container nav">
 
-    <div class="brand">
-      <img src="assets/lab-logo.svg" alt="Lab logo">
-      <div>
-        <div class="title">EcoDynamics Lab</div>
-        <div class="sub">Institute for Environmental Genomics • University of Oklahoma</div>
-      </div>
-    </div>
+<div class="brand">
+<img src="assets/lab-logo.svg" alt="Lab logo">
+<div>
+<div class="title">EcoDynamics Lab</div>
+<div class="sub">Institute for Environmental Genomics • University of Oklahoma</div>
+</div>
+</div>
 
-    <nav class="menu">
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="teaching.html">Teaching</a>
-    </nav>
+<nav class="menu">
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="teaching.html">Teaching</a>
+</nav>
 
-  </div>
+</div>
 </header>
 
 
 <main class="container section">
 
-  <h1>Research Themes</h1>
+<h1>Research Themes</h1>
 
-  <div style="height:20px;"></div>
+<div style="height:24px;"></div>
 
-  <!-- THEME 1 -->
-  <div class="card">
+<!-- ====================================================== -->
+<!-- RESEARCH THEME 1 -->
+<!-- ====================================================== -->
 
-    <div class="theme-row">
+<div class="card">
 
-      <!-- LEFT: 4-panel image gallery (ordered exactly as you uploaded) -->
-      <div class="theme-media">
-        <div class="field-gallery">
-          <img src="assets/img/field1.png" alt="Field site locations (USA map)">
-          <img src="assets/img/field2.png" alt="Aerial view of field site">
-          <img src="assets/img/field3.jpg" alt="Grassland experimental plots">
-          <img src="assets/img/field4.jpg" alt="Warming / precipitation manipulation infrastructure">
-        </div>
-      </div>
+<div class="theme-row">
 
-      <!-- RIGHT: Text -->
-      <div class="theme-body">
-        <h2 style="margin-top:0;">
-          Ecosystem Responses to Environmental Change: field experiments and data synthesis
-        </h2>
+<!-- LEFT COLUMN : STACKED FIGURES -->
+<div class="theme-media">
 
-        <p>
-          Plant productivity and soil
-          respiration are the two largest carbon fluxes into and out of ecosystems, and their balance
-          determines ecosystem carbon sequestration. Climate change and land management practices
-          profoundly affect both fluxes. Using analysis of variance (ANOVA), principal component
-          analysis (PCA), linear mixed-effects model (LMM), structure equation modeling (SEM), and
-          meta-analysis, I have revealed critical mechanisms that determine ecosystem responses to
-          environmental change. For example, in a tallgrass prairie, experimental warming and hay harvest
-          altered plant community composition and diversity (Shi et al. 2015 Journal of Ecology), which in
-          turn promoted plant productivity and enhanced its temporal stability (Shi et al. 2016 Nature
-          Communications). The shifted community also amplified the response of soil respiration to
-          warming over time (Xu and Shi et al. 2015 Global Change Biology). Together, these changes led
-          toward carbon neutrality, where increased productivity was balanced by enhanced soil respiration
-          (Shi et al. 2015 Ecosphere). In another field experiment, I found that plant productivity responded
-          strongly to drought and increased precipitation, but not to warming (Shi et al. 2018 Global Change
-          Biology). Soil carbon stocks remained stable, reflecting the unchanged carbon balance under
-          altered temperature and precipitation (Xu# and Shi# et al. 2016 Global Change Biology; #equal
-          contribution). To extend these experimental insights to management and policy-relevant scales, I
-          conducted global syntheses. A meta-analysis of 83 precipitation experiments revealed that mesic
-          grasslands were more sensitive to decreased precipitation but less sensitive to increased
-          precipitation compared with arid grasslands (Wilcox# and Shi# et al. 2017 Global Change Biology).
-          Another meta-analysis showed that asymmetric responses of productivity and respiration to
-          drought were strongest in grasslands relative to forests and savannas (Shi et al. 2014
-          Biogeosciences). Meanwhile, our synthesis of global warming experiments demonstrated no
-          consistent evidence for either positive or negative soil carbon sequestration across ecosystems (van
-          Gestel and Shi et al. 2018 Nature).
-        </p>
+<div class="field-gallery">
 
-        <div class="theme-caption">
-          Figures (left): site context and experimental infrastructure supporting long-term manipulation and monitoring.
-        </div>
-      </div>
+<img src="assets/img/field1.png"
+alt="Field sites across the United States">
 
-    </div>
-  </div>
+<img src="assets/img/field2.png"
+alt="Aerial view of experimental landscape">
+
+<img src="assets/img/field3.jpg"
+alt="Grassland experimental plots">
+
+<img src="assets/img/field4.jpg"
+alt="Climate manipulation infrastructure">
+
+</div>
+
+</div>
 
 
-  <div style="height:20px;"></div>
+<!-- RIGHT COLUMN : TEXT -->
+<div class="theme-body">
 
-  <!-- THEME 2 -->
-  <div class="card research-card">
-    <div class="theme-row">
+<h2 style="margin-top:0;">
+Ecosystem Responses to Environmental Change:
+field experiments and data synthesis
+</h2>
 
-      <div class="theme-media">
-        <img src="assets/img/soil-radiocarbon.png"
-             alt="Soil carbon persistence and dynamics: data-driven modeling and upscaling with machine learning">
-        <div class="theme-caption">
-          Replace this image with your radiocarbon map / soil profile synthesis / model–data comparison figure.
-        </div>
-      </div>
+<p>
+Plant productivity and soil respiration represent the two largest carbon fluxes
+entering and leaving ecosystems. Their balance determines ecosystem carbon
+sequestration under climate change.
+Using ANOVA, PCA, linear mixed-effects models,
+structural equation modeling, and global meta-analysis,
+my research quantifies mechanisms controlling ecosystem responses
+to environmental change.
+</p>
 
-      <div class="theme-body">
-        <h2>Soil carbon persistence and dynamics: data-driven modeling and upscaling with machine learning</h2>
-        <p>
-          Another major theme of my research focuses on identifying key processes of soil carbon
-          sequestration using multi-source datasets. The goal is to develop data-driven models and reduce
-          uncertainty in long-term soil carbon predictions. By assimilating global microbial and soil carbon
-          datasets, we found that two complex soil carbon models predicted widely varying magnitudes and
-          directions of global carbon sequestration (Shi et al. 2018 Nature Communications). In contrast, a
-          simpler, data-constrained model predicted small positive sequestration. This work emphasized that
-          diverse model structures increase confidence in projections, but that excessive complexity can also
-          amplify uncertainty. We highlighted the need for balance between model realism and structural
-          diversity, alongside improved global datasets for model constraint. One of the most critical datasets for constraining model predictions is soil radiocarbon abundance, a robust indicator of carbon
-          persistence. We compiled thousands of site-level radiocarbon measurements (Lawrence, …Shi et
-          al. 2020 Earth System Science Data) and upscaled these using ML algorithms to produce global
-          radiocarbon maps (Shi et al. 2020, Nature Geoscience). Our results showed that climate dominates
-          topsoil radiocarbon variability, while soil depth controls deeper carbon age distributions.
-          Compared with Earth System Model (ESM) outputs, the ML-upscaled data revealed that existing
-          models overestimate soil carbon sequestration under global change. Building on this work, I
-          demonstrated that global-scale model convergence across multiple ESMs can mask deep
-          inconsistencies in predicted soil carbon changes (Shi et al. 2024, AGU Advances). Furthermore,
-          using over 70,000 soil carbon profiles and deep learning algorithms, we found that carbon use
-          efficiency is at least four times as influential as carbon input, decomposition, or vertical transport
-          in determining global soil carbon storage (Tao,…Shi et al. 2023 Nature). Together, these studies
-          define a quantitative, data-informed framework for improving how global models represent soil
-          carbon dynamics, persistence, and uncertainty.
-        </p>
-        <p>
-          Beyond prediction, we use ML for mechanism discovery—e.g., quantifying the relative influence of carbon use efficiency versus
-          other processes—and to build ML-enabled benchmarking and emulator frameworks that support scalable diagnosis, uncertainty mapping,
-          and model development.
-        </p>
-      </div>
+<p>
+In a tallgrass prairie experiment, warming and hay harvest altered plant community
+composition and diversity
+(<a class="ref" href="https://scholar.google.com/scholar?q=Shi+2015+Journal+of+Ecology" target="_blank">Shi et&nbsp;al. 2015 Journal of Ecology</a>),
+which increased productivity stability
+(<a class="ref" href="https://scholar.google.com/scholar?q=Shi+2016+Nature+Communications" target="_blank">Shi et&nbsp;al. 2016 Nature Communications</a>)
+and amplified soil respiration responses to warming
+(<a class="ref" href="https://scholar.google.com/scholar?q=Xu+Shi+2015+Global+Change+Biology" target="_blank">Xu & Shi et&nbsp;al. 2015 GCB</a>).
+Together these shifts produced ecosystem carbon neutrality
+(<a class="ref" href="https://scholar.google.com/scholar?q=Shi+2015+Ecosphere" target="_blank">Shi et&nbsp;al. 2015 Ecosphere</a>).
+</p>
 
-    </div>
-  </div>
+<p>
+Additional experiments revealed strong productivity responses to altered
+precipitation but limited sensitivity to warming
+(<a class="ref" href="https://scholar.google.com/scholar?q=Shi+2018+Global+Change+Biology" target="_blank">Shi et&nbsp;al. 2018 GCB</a>),
+while soil carbon stocks remained stable
+(<a class="ref" href="https://scholar.google.com/scholar?q=Xu+Shi+2016+Global+Change+Biology" target="_blank">Xu# & Shi# et&nbsp;al. 2016 GCB</a>).
+</p>
 
-  <div style="height:20px;"></div>
+<p>
+To extend experimental understanding globally, I conducted syntheses showing
+grassland sensitivity to precipitation extremes
+(<a class="ref" href="https://scholar.google.com/scholar?q=Wilcox+Shi+2017+Global+Change+Biology" target="_blank">Wilcox# & Shi# et&nbsp;al. 2017 GCB</a>),
+asymmetric drought responses across biomes
+(<a class="ref" href="https://scholar.google.com/scholar?q=Shi+2014+Biogeosciences" target="_blank">Shi et&nbsp;al. 2014 Biogeosciences</a>),
+and no universal warming-induced soil carbon sequestration
+(<a class="ref" href="https://scholar.google.com/scholar?q=van+Gestel+Shi+2018+Nature" target="_blank">van Gestel & Shi et&nbsp;al. 2018 Nature</a>).
+</p>
 
-  <!-- THEME 3 -->
-  <div class="card research-card">
-    <div class="theme-row">
+</div>
 
-      <div class="theme-media">
-        <img src="assets/img/model-benchmarking.png"
-             alt="Machine Learning–Enabled Model Benchmarking and development">
-        <div class="theme-caption">
-          Replace with your emulator/benchmarking workflow figure or uncertainty map.
-        </div>
-      </div>
+</div>
+</div>
 
-      <div class="theme-body">
-        <h2>Machine Learning–Enabled Model Benchmarking and development</h2>
-        <p>
-          My group will apply ML to detect structural errors and inconsistencies in
-          multi-model ensembles, building on my recent
-          work (Shi et al. 2024 AGU Advances). We will develop deep
-          learning emulators that reproduce the behavior
-          of land carbon models, allowing scalable
-          benchmarking across ESMs. These emulators
-          will support the creation of diagnostic
-          uncertainty maps that pinpoint where model
-          convergence conceals mechanistic divergence.
-          For model development and parameter
-          learning, I will design a coupled deep learning
-          system that integrates feed-forward neural
-          networks (NNs) and long short-term memory
-          (LSTM) NNs. The LSTM will address
-          temporal autocorrelation, particularly for
-          carbon pool variables such as plant biomass and soil carbon. Importantly, model parameters will
-          be included as features within the emulator, enabling it to learn parameter sensitivities and biases.
-          A secondary neural network will perform statistical parameter learning, using experimental
-          benchmarks as labels. This end-to-end, label-free training architecture allows the emulator to infer
-          and correct model biases, thereby reducing uncertainty in carbon–climate feedback projections.
-        </p>
-      </div>
 
-    </div>
-  </div>
+<!-- ====================================================== -->
+<!-- THEME 2 -->
+<!-- ====================================================== -->
 
-  <div style="height:20px;"></div>
+<div style="height:24px;"></div>
 
-  <!-- THEME 4 -->
-  <div class="card research-card">
-    <div class="theme-row">
+<div class="card">
 
-      <div class="theme-media">
-        <img src="assets/img/microbial-ml.png"
-             alt="Application of ML to microbial biome analysis and ecosystem modeling">
-        <div class="theme-caption">
-          Replace with your microbial ML + ecosystem modeling integration figure (e.g., Kessler Farm workflow).
-        </div>
-      </div>
+<h2 style="margin-top:0;">
+Soil Carbon Persistence and Dynamics:
+Data-Driven Modeling and Upscaling
+</h2>
 
-      <div class="theme-body">
-        <h2>Application of ML to microbial biome analysis and ecosystem modeling</h2>
-        <p>
-          Machine learning is
-          transforming microbial ecology by enabling the classification, prediction, and interpretation of
-          complex, high-dimensional data. Classical algorithms such as random forests, support vector
-          machines, and gradient boosting have long supported taxonomic classification and biomarker discovery. More recently, deep learning architectures—including convolutional neural networks
-          (CNNs), recurrent neural networks (RNNs), and transformer-based embeddings—have enhanced
-          our ability to model microbial temporal dynamics and integrate multi-omics data. These tools not
-          only improve predictive accuracy but also enable discovery of novel ecological patterns that
-          traditional statistical approaches cannot easily capture. To enhance interpretability, my group will
-          employ explainable AI methods such as SHapley Additive exPlanations (SHAP) and Locally
-          Interpretable Model-Agnostic Explanations (LIME) to ensure that predictions highlight
-          ecologically meaningful drivers such as microbial interactions, keystone taxa, or functional guilds.
-          Leveraging one of the longest-running
-          field experiments at OU’s Kessler Farm
-          (Figure 2), where temperature,
-          precipitation, and harvest treatments have
-          been continuously manipulated since
-          2009, we will integrate microbial
-          dynamics into ecosystem carbon models
-          using ML. The central hypothesis is that
-          microbial temporal dynamics encode
-          information about functional traits (e.g.,
-          carbon use efficiency, mortality rate)
-          relevant to soil carbon cycling. Through
-          this approach, we aim to bridge microbial
-          ecology and ecosystem carbon cycle,
-          offering new predictive capacity for
-          global carbon–climate feedback.
-          Together, these advances demonstrate
-          how ML methods are not only improving
-          our ability to classify and predict
-          microbial community dynamics but also
-          reshaping the way microbial ecology
-          interfaces with ecosystem and climate
-          research. These efforts will establish a
-          data–model integration hub at OU,
-          bridging biology, statistics, and Earth system science. I envision close
-          collaboration with the School of Biological Sciences, the Institute for Environmental Genomics,
-          and national laboratory partners to co-develop open-source algorithms for biological model
-          calibration, benchmarking, and ML integration. My long-term vision is to contribute to OU’s
-          growing strength in quantitative biology by fostering collaborations where biological statistics
-          connect data science, ecology, and climate modeling to better understand Earth’s dynamic
-          biosphere.
-        </p>
-      </div>
+<p>
+This research theme integrates global datasets, radiocarbon observations,
+and machine learning to reduce uncertainty in soil carbon projections.
+Comparisons among soil carbon models demonstrated large divergence in predicted
+carbon sequestration trajectories
+(<a class="ref" href="https://scholar.google.com/scholar?q=Shi+2018+Nature+Communications+soil+carbon" target="_blank">Shi et&nbsp;al. 2018 Nature Communications</a>).
+</p>
 
-    </div>
-  </div>
+<p>
+We compiled global soil radiocarbon datasets
+(<a class="ref" href="https://scholar.google.com/scholar?q=Lawrence+Shi+2020+Earth+System+Science+Data" target="_blank">Lawrence … Shi et&nbsp;al. 2020 ESSD</a>)
+and produced global ML-upscaled radiocarbon maps
+(<a class="ref" href="https://scholar.google.com/scholar?q=Shi+2020+Nature+Geoscience+radiocarbon" target="_blank">Shi et&nbsp;al. 2020 Nature Geoscience</a>),
+revealing systematic ESM overestimation of soil carbon sequestration.
+</p>
+
+<p>
+Recent work demonstrates hidden inconsistencies among converging Earth system models
+(<a class="ref" href="https://scholar.google.com/scholar?q=Shi+2024+AGU+Advances+soil+carbon" target="_blank">Shi et&nbsp;al. 2024 AGU Advances</a>)
+and shows carbon use efficiency dominates global soil carbon storage
+(<a class="ref" href="https://scholar.google.com/scholar?q=Tao+Shi+2023+Nature+soil+carbon" target="_blank">Tao … Shi et&nbsp;al. 2023 Nature</a>).
+</p>
+
+</div>
+
+
+<!-- ====================================================== -->
+<!-- THEME 3 -->
+<!-- ====================================================== -->
+
+<div style="height:24px;"></div>
+
+<div class="card">
+
+<h2 style="margin-top:0;">
+Machine Learning–Enabled Model Benchmarking and Development
+</h2>
+
+<p>
+We develop deep learning emulators of land carbon models to diagnose
+structural errors across Earth system model ensembles
+(<a class="ref" href="https://scholar.google.com/scholar?q=Shi+2024+AGU+Advances" target="_blank">Shi et&nbsp;al. 2024 AGU Advances</a>).
+Coupled neural network architectures integrate feed-forward NNs
+with LSTM networks to capture temporal carbon dynamics.
+</p>
+
+</div>
+
+
+<!-- ====================================================== -->
+<!-- THEME 4 -->
+<!-- ====================================================== -->
+
+<div style="height:24px;"></div>
+
+<div class="card">
+
+<h2 style="margin-top:0;">
+Machine Learning for Microbial Biome Analysis and Ecosystem Modeling
+</h2>
+
+<p>
+Machine learning enables prediction and interpretation of complex
+microbial community dynamics using CNNs, RNNs, transformers,
+and explainable AI approaches such as SHAP and LIME.
+This work integrates microbial processes into ecosystem carbon models,
+bridging microbial ecology, statistics, and Earth system science.
+</p>
+
+</div>
+
 
 </main>
 
 
 <footer class="footer">
-  <div class="container">
-    © <span id="year"></span> EcoDynamics Lab • University of Oklahoma
-  </div>
+<div class="container">
+© <span id="year"></span> EcoDynamics Lab • University of Oklahoma
+</div>
 </footer>
 
 <script src="assets/script.js"></script>
