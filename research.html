@@ -6,53 +6,67 @@
   <title>Research — EcoDynamics Lab</title>
   <link rel="stylesheet" href="assets/style.css" />
 
-  <!-- Strong, scoped layout overrides for this page only -->
+  <!-- Page-only layout helpers (keeps your global style.css untouched) -->
   <style>
-    /* A card that contains a 2-column layout */
-    .research-card .theme-row{
-      display: flex !important;
-      gap: 22px;
-      align-items: flex-start;
+    /* Two-column theme layout inside a card */
+    .theme-row{
+      display:flex;
+      gap:28px;
+      align-items:stretch; /* makes left + right columns match height */
     }
 
-    /* Left column (image) */
-    .research-card .theme-media{
-      flex: 0 0 38%;
-      max-width: 38%;
+    .theme-media{
+      flex:0 0 42%;
+      display:flex;        /* allow inner gallery to stretch */
+      min-width: 280px;
     }
 
-    .research-card .theme-media img{
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 6px;
+    .theme-body{
+      flex:1 1 auto;
+      min-width:0;
     }
 
-    .research-card .theme-caption{
-      font-size: 14px;
-      color: #666;
-      margin-top: 10px;
-      line-height: 1.35;
+    /* 2x2 gallery that fills the entire left column height */
+    .field-gallery{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap:12px;
+      width:100%;
+      height:100%;
     }
 
-    /* Right column (text) */
-    .research-card .theme-body{
-      flex: 1 1 auto;
-      min-width: 0; /* prevents weird overflow */
+    .field-gallery img{
+      width:100%;
+      height:100%;
+      object-fit:cover;   /* keeps a uniform panel look */
+      border-radius:6px;
+      display:block;
     }
 
-    .research-card .theme-body h2{
-      margin-top: 0;
+    .theme-caption{
+      font-size:14px;
+      color:#666;
+      margin-top:12px;
+      line-height:1.35;
     }
 
-    /* Stack on tablets/phones */
-    @media (max-width: 980px){
-      .research-card .theme-row{
-        flex-direction: column !important;
+    /* Mobile/tablet stacking */
+    @media (max-width: 900px){
+      .theme-row{
+        flex-direction:column;
       }
-      .research-card .theme-media{
-        flex: 0 0 auto;
-        max-width: 100%;
+      .theme-media{
+        flex:0 0 auto;
+        min-width:0;
+      }
+      .field-gallery{
+        height:auto;
+      }
+      .field-gallery img{
+        height:auto;
+        object-fit:contain;
+        background:#f3f3f3; /* optional: avoids weird cropping when stacked */
       }
     }
   </style>
@@ -89,34 +103,26 @@
   <div style="height:20px;"></div>
 
   <!-- THEME 1 -->
-  <div class="card research-card">
+  <div class="card">
+
     <div class="theme-row">
 
+      <!-- LEFT: 4-panel image gallery (ordered exactly as you uploaded) -->
       <div class="theme-media">
         <div class="field-gallery">
-
-        <img src="assets/img/field1.png"
-             alt="Geographic distribution of field sites">
-      
-        <img src="assets/img/field2.png"
-             alt="Aerial view of experimental landscape">
-      
-        <img src="assets/img/field3.jpg"
-             alt="Long-term warming experiment set up in 1999">
-      
-        <img src="assets/img/field4.jpg"
-             alt="Long-term warming and precipitation manipulation experiment set up in 2009">
-      
-      </div>
-             alt="Quantifying Ecosystem Responses to Environmental Change.">
-        <div class="theme-caption">
-          Long-term field manipulation infrastructure used to quantify ecosystem responses to warming,
-          precipitation change, and land management.
+          <img src="assets/img/field1.png" alt="Field site locations (USA map)">
+          <img src="assets/img/field2.png" alt="Aerial view of field site">
+          <img src="assets/img/field3.png" alt="Grassland experimental plots">
+          <img src="assets/img/field4.png" alt="Warming / precipitation manipulation infrastructure">
         </div>
       </div>
 
+      <!-- RIGHT: Text -->
       <div class="theme-body">
-        <h2>Ecosystem Responses to Environmental Change: field experiments and data synthesis</h2>
+        <h2 style="margin-top:0;">
+          Ecosystem Responses to Environmental Change: field experiments and data synthesis
+        </h2>
+
         <p>
           Plant productivity and soil
           respiration are the two largest carbon fluxes into and out of ecosystems, and their balance
@@ -144,10 +150,15 @@
           consistent evidence for either positive or negative soil carbon sequestration across ecosystems (van
           Gestel and Shi et al. 2018 Nature).
         </p>
+
+        <div class="theme-caption">
+          Figures (left): site context and experimental infrastructure supporting long-term manipulation and monitoring.
+        </div>
       </div>
 
     </div>
   </div>
+
 
   <div style="height:20px;"></div>
 
