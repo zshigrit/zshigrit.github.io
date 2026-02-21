@@ -21,34 +21,21 @@
   flex:0 0 38%;
 }
 
-.theme-body{
-  flex:1;
-}
-
-/* ---------- STACKED FIGURES ---------- */
-
+/* ⭐ KEY FIX: limit total figure height */
 .field-gallery{
   display:flex;
   flex-direction:column;
-  gap:14px;
+  gap:10px;
+  height:100%;
+  max-height:520px;   /* ← controls overall height */
 }
 
+/* ⭐ make images share space evenly */
 .field-gallery img{
   width:100%;
-  border-radius:6px;
+  height:calc((520px - 30px)/4); /* equal heights */
   object-fit:cover;
-}
-
-/* ---------- REFERENCE LINKS ---------- */
-
-.ref{
-  text-decoration:none;
-  color:#1a5fb4;
-  font-weight:500;
-}
-
-.ref:hover{
-  text-decoration:underline;
+  border-radius:6px;
 }
 
 /* ---------- MOBILE ---------- */
@@ -57,6 +44,14 @@
 
   .theme-row{
     flex-direction:column;
+  }
+
+  .field-gallery{
+    max-height:none;
+  }
+
+  .field-gallery img{
+    height:auto;
   }
 
 }
