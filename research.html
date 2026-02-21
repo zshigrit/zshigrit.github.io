@@ -14,29 +14,26 @@
 .theme-row{
   display:flex;
   gap:32px;
-  align-items:stretch;
+  align-items:flex-start;
 }
 
 .theme-media{
-  flex:0 0 38%;
+  flex:0 0 40%;
 }
 
-/* ⭐ KEY FIX: limit total figure height */
+/* ⭐ 2 × 2 GRID */
 .field-gallery{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  height:100%;
-  max-height:520px;   /* ← controls overall height */
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
 }
 
-/* ⭐ make images share space evenly */
+/* ⭐ keep natural figure shape */
 .field-gallery img{
   width:100%;
-  max-height:130px;
-  object-fit: contain;
-  background:#f5f5f5;
-  padding:6px;
+  height:auto;
+  border-radius:6px;
+  display:block;
 }
 
 /* ---------- MOBILE ---------- */
@@ -48,16 +45,13 @@
   }
 
   .field-gallery{
-    max-height:none;
-  }
-
-  .field-gallery img{
-    height:auto;
+    grid-template-columns:1fr;
   }
 
 }
 
 </style>
+  
 </head>
 
 
