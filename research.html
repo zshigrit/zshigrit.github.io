@@ -236,11 +236,18 @@ Machine Learning–Enabled Model Benchmarking and Development
 </h2>
 
 <p>
-We develop deep learning emulators of land carbon models to diagnose
+My group will apply ML to detect structural errors and inconsistencies in multi-model ensembles, building on my recent AGU Advances work. 
+  We will develop deep learning emulators that reproduce the behavior of land carbon models, allowing scalable benchmarking across ESMs. 
+  These emulators will support the creation of diagnostic uncertainty maps that pinpoint where model convergence conceals mechanistic divergence. 
+  For model development and parameter learning, I will design a coupled deep learning system that integrates feed-forward neural networks (NNs) 
+  and long short-term memory (LSTM) NNs. The LSTM will address temporal autocorrelation, particularly for carbon pool variables such as plant biomass 
+  and soil carbon. Importantly, model parameters will be included as features within the emulator, enabling it to learn parameter sensitivities and biases. 
+  A secondary neural network will perform statistical parameter learning, using experimental benchmarks as labels. This end-to-end, label-free 
+  training architecture allows the emulator to infer and correct model biases, thereby reducing uncertainty in carbon–climate feedback projections. 
+  We develop deep learning emulators of land carbon models to diagnose
 structural errors across Earth system model ensembles
 (<a class="ref" href="https://scholar.google.com/scholar?q=Shi+2024+AGU+Advances" target="_blank">Shi et&nbsp;al. 2024 AGU Advances</a>).
-Coupled neural network architectures integrate feed-forward NNs
-with LSTM networks to capture temporal carbon dynamics.
+
 </p>
 
 </div>
@@ -259,11 +266,22 @@ Machine Learning for Microbial Biome Analysis and Ecosystem Modeling
 </h2>
 
 <p>
-Machine learning enables prediction and interpretation of complex
-microbial community dynamics using CNNs, RNNs, transformers,
-and explainable AI approaches such as SHAP and LIME.
-This work integrates microbial processes into ecosystem carbon models,
-bridging microbial ecology, statistics, and Earth system science.
+Machine learning is transforming microbial ecology by enabling the classification, prediction, and interpretation of complex, high-dimensional data. 
+Classical algorithms such as random forests, support vector machines, and gradient boosting have long supported taxonomic classification and biomarker
+  discovery. More recently, deep learning architectures—including convolutional neural networks (CNNs), recurrent neural networks (RNNs), 
+  and transformer-based embeddings—have enhanced our ability to model microbial temporal dynamics and integrate multi-omics data. 
+  These tools not only improve predictive accuracy but also enable discovery of novel ecological patterns that traditional statistical approaches cannot easily capture. 
+  To enhance interpretability, my group will employ explainable AI methods such as SHapley Additive exPlanations (SHAP) and 
+  Locally Interpretable Model-Agnostic Explanations (LIME) to ensure that predictions highlight ecologically meaningful drivers such as microbial interactions, 
+  keystone taxa, or functional guilds. Leveraging one of the longest-running field experiments at OU’s Kessler Farm (Figure 2), where temperature, precipitation, 
+  and harvest treatments have been continuously manipulated since 2009, we will integrate microbial dynamics into ecosystem carbon models. The central hypothesis 
+  is that microbial temporal dynamics encode information about functional traits (e.g., carbon use efficiency, mortality rate) relevant to soil carbon cycling. 
+  Through this approach, we aim to bridge microbial ecology and ecosystem carbon cycle, offering new predictive capacity for global carbon–climate feedback. 
+  Together, these advances demonstrate how ML methods are not only improving our ability to classify and predict microbial community dynamics but also reshaping 
+  the way microbial ecology interfaces with ecosystem and climate research. These efforts will establish a data–model integration hub at OU, bridging biology, statistics, and Earth system science. 
+  I envision close collaboration with the School of Biological Sciences, the Institute for Environmental Genomics, and national laboratory biological model calibration, benchmarking, and ML integration. 
+  My long-term vision is to contribute to OU’s growing strength in quantitative biology by 
+  fostering collaborations where biological statistics connect data science, ecology, and climate modeling to better understand Earth’s dynamic biosphere.
 </p>
 
 </div>
